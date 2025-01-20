@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | NFT preview card component</title>
 
-  Equilibrium #3429
+    <link rel="stylesheet" href="./main.css">
 
-  Our Equilibrium collection promotes balance and calm.
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution, .attribution a {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="imageContainer">
+        <img class="glassCube" src="./images/image-equilibrium.jpg" alt="a glass cube">
+        <div class="middleText">
+          <img src="./images/icon-view.svg" alt="an eye for viewing">
+        </div>
+      </div>
+      <h1>Equilibrium #3429</h1>
+      <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="price">
+        <div class="eth">
+          <img src="./images/icon-ethereum.svg" alt="">
+          <p>0.041 ETH</p>
+        </div>
+        
+        <div class="daysLeft">
+          <img src="./images/icon-clock.svg" alt="">
+          <p>3 days left</p>
+        </div>
+      </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+      <hr>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="author">
+        <img src="./images/image-avatar.png" alt="Picture of author" />
+        <p>Creation of <span class="authorName">Jules Wyvern</span></p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/BrandonLHaupt">Brandon Haupt</a>.
+      </div>
+    </footer>
+  </body>
 </html>

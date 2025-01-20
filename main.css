@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0; 
+    margin: 0; 
+    font-family: "Outfit", serif;
+    font-size: 18px;
+} 
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d192b;
+    gap: 2rem;
+    color: white;
+}
+
+main {
+    width: 350px;
+    background-color: #14253d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: -15px 26px 0px 1px #0C1729;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+hr {
+    border: 1px solid #2f415b;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.glassCube {
+    height: 300px;
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middleText {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(178, 100%, 50%, 0.55);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.imageContainer:hover .glassCube {
+    opacity: .3;
+}
+
+.imageContainer:hover .middleText {
+    opacity: 1;
+}
+    
+
+.description {
+    color: #7F93AE;
+}
+
+.daysLeft, .eth, .price, .author {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.daysLeft img {
+    height: 20px;
+}
+
+.eth p{
+    color: #00fff7;
+}
+
+.author {
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    /* padding: 0 2rem; */
+    gap: 15px;
+    color: #7F93AE;
+    padding-bottom: .5rem;
+}
+
+.author p, .authorName, .daysLeft p, .eth p {
+    font-size: 16px;
+}
+
+.authorName {
+    color: white;
+}
+
+.author img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+
+h1:hover, .authorName:hover {
+    color: #00fff7;
+    cursor: pointer;
+}
+
